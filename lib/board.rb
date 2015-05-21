@@ -1,12 +1,12 @@
 require 'colorize'
 
-require_relative 'piece.rb'
-require_relative 'sliding_piece.rb'
-require_relative 'stepping_piece.rb'
-require_relative 'king.rb'
-require_relative 'rook.rb'
-require_relative 'pawn.rb'
-require_relative 'chess_error'
+require_relative 'pieces/piece.rb'
+require_relative 'pieces/sliding_piece.rb'
+require_relative 'pieces/stepping_piece.rb'
+require_relative 'pieces/king.rb'
+require_relative 'pieces/rook.rb'
+require_relative 'pieces/pawn.rb'
+require_relative 'chess_error.rb'
 
 class Board
   COLUMN_TRANSLATION = {

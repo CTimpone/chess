@@ -1,13 +1,13 @@
 # encoding: utf-8
 
-require_relative 'board.rb'
-require_relative 'piece.rb'
-require_relative 'sliding_piece.rb'
-require_relative 'stepping_piece.rb'
-require_relative 'pawn.rb'
-require_relative 'human.rb'
-require_relative 'computer.rb'
-require_relative 'chess_error.rb'
+require_relative 'lib/board.rb'
+require_relative 'lib/pieces/piece.rb'
+require_relative 'lib/pieces/sliding_piece.rb'
+require_relative 'lib/pieces/stepping_piece.rb'
+require_relative 'lib/pieces/pawn.rb'
+require_relative 'lib/human.rb'
+require_relative 'lib/computer.rb'
+require_relative 'lib/chess_error.rb'
 
 
 class Game
