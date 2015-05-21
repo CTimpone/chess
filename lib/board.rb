@@ -294,7 +294,6 @@ class Board
     over?(color) && in_check?(color)
   end
 
-  # used by the Piece class
   def in_bounds?(pos)
     pos.all? { |i| i.between?(0,7) }
   end

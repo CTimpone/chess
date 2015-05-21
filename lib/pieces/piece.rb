@@ -14,10 +14,6 @@ class Piece
     board[@pos] = self
   end
 
-  def moves
-    raise NotImplementedError
-  end
-
   def valid_moves
     moves.reject { |pos| move_into_check?(pos) }
   end
@@ -25,7 +21,6 @@ class Piece
   protected
   def move_into_check?(pos)
     board_dup = board.dup
-    #board_dup = YAML::load(@board.to_yaml)
 
     board_dup.move!(@pos, pos)
     board_dup.in_check?(color)

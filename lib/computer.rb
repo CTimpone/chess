@@ -4,7 +4,6 @@ require 'byebug'
 class Computer
   OVER_9000 = 9_001
 
-  #BOARD_POS
   attr_accessor :board, :color
 
   def initialize(eval_method)
@@ -29,7 +28,6 @@ class Computer
   end
 
   def random
-    #sleep(1)
     valid_pieces = controlled_pieces(@board, @color).select do |piece|
       !piece.valid_moves.empty?
     end
@@ -200,7 +198,6 @@ class Computer
     end
 
     score = evaluate_pieces(board)
-    #score += 50 if board.in_check?(other_color(eval_color))
     score += evaluate_pawns(board)
     eval_color == color ? score : -score
   end

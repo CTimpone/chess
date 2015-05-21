@@ -45,9 +45,9 @@ class Game
 
     puts @board.inspect
     if @board.checkmate?(:white)
-      puts "This is the white player (ノ ゜Д゜)ノ ︵ ┻━┻ ."
+      puts "Black player is victorious.  Congratulations!"
     elsif @board.checkmate?(:black)
-      puts "This is the black player (ノ ゜Д゜)ノ ︵ ┻━┻ ."
+      puts "White player is victorious.  Congratulations!"
     else
       puts "wow, a tie"
     end
