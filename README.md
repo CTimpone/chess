@@ -28,4 +28,4 @@ The final AI is an iteration of the Negamax evaluation AI.  Once again, the AI c
 Comparatively, the human player simply enters two chess-styled coordinates (which are translated with help of the board) to complete their move.  The first coordinate is the starting piece, and the second is where it is moved.
 
 ## Running the Program
-To actually run the program, simply clone or download the project, cd into the directory and run <code>ruby game.rb</code> in the command line.  It will prompt for what type of player is desired for each color.  For choosing an AI, smart is the computer without foresight, while grandmaster looks a move ahead.
+To actually run the program, first make sure that the colorize gem is installed on your machine <code>gem install colorize</code>.  After that is taken care of, simply clone or download the project, cd into the directory and run <code>ruby game.rb</code> in the command line.  It will prompt for what type of player is desired for each color.  For choosing an AI, smart is the computer without foresight, while grandmaster looks a move ahead.
